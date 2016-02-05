@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="niem-iep-archetype">
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>mil.usmc.mcsc.mctssa.tcg.iob</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+    <!-- empty value starts fileset from the root directory of the project -->
+    <directory/>
+    <fileSets>
+        <fileSet filtered="false" packaged="false">
+            <directory/>
+            <includes>
+                <include>**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
