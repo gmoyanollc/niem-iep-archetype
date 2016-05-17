@@ -1,0 +1,2 @@
+ignore.*
+./src/main/resources/archetype-resources/src/test/resources/validate/validate-niem-conformance
