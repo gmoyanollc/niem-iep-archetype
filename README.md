@@ -34,7 +34,7 @@ Contents
 
 How to use
 ----------
-1. [git-clone] (https://git-scm.com) this repository in a empty target directory:
+1. [git-clone] (https://git-scm.com) this repository to an empty target directory:
 
     git clone [resource]/niem-iep-archetype.git
 
