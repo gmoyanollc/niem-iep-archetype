@@ -52,7 +52,9 @@ How to use
 
         Enter a property 'artifactId' value.  The value determines the project's root folder name.
     
-
+Feedback
+--------
+If you feel like the archetype is missing a feature or has a defect, contact me or create an [issue] (https://github.com/gmoyanollc/niem-iep-archetype/issues). When creating a new issue, please provide a comprehensive description of your concern. Especially for fixing bugs it is crucial that I can reproduce your problem. For this reason, entire debug logs, source or most preferably little demo projects attached to the issue are very much appreciated. Of course, patches are welcome, too.
 //
 // Updated by:
 // Created by: George Moyano  Feb 2016

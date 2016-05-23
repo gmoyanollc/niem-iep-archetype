@@ -30,15 +30,25 @@
         </pluginManagement>
     </build>
 
+    <reporting/>
+    
+    <licenses>
+        <license>
+            <name/>
+            <url/>
+        </license>
+    </licenses>
+    
+    <organization>
+        <name/>
+        <url/>
+    </organization>
+    
     <developers>
         <developer>
             <name>George Moyano</name>
-            <url>http://www.gmoyano.com</url>
-            <organization>ManTech International</organization>
+            <url>https://github.com/gmoyanollc</url>
         </developer>
     </developers>
 
-    <licenses>
-        <license/>
-    </licenses>
 </project>
