@@ -26,21 +26,23 @@ Contents
 
     * A folder tree that loosely resembles the guidance provided by NIEM [Model Package Description (MPD)] (https://reference.niem.gov/niem/specification/model-package-description/3.0/model-package-description-3.0.html#appendix_E). 
     
-    * ISO Schematron validators in XSLT2
-
-    * Ant Task for Schematron with SVRL and text output
-    
-    * NIEM Naming and Design Rules (NDR) 3.0 2014 Schematron
+    * Automation to add component [niem-conformance-validator] ( https://github.com/gmoyanollc/niem-conformance-validator )
 
 How to use
 ----------
-1. [git-clone] (https://git-scm.com) this repository to an empty target directory:
+1. [git-clone] (https://git-scm.com) this repository:
 
-    git clone [resource]/niem-iep-archetype.git
+    git clone  https://github.com/gmoyanollc/niem-iep-archetype
+    
+    Expected result:
+    
+        niem-iep-archetype
+        |-- src
+        `-- target
 
 2. [Maven-install] (https://maven.apache.org/download.cgi) this archetype to a Maven repository:
 
-    mvn install
+    mvn clean install
 
 3. Generate a project based on this archetype in your development folder:
 
@@ -50,7 +52,9 @@ How to use
 
         Optionally accept property default values by pressing "Enter".  
 
-        Enter a property 'artifactId' value.  The value determines the project's root folder name.
+        Enter a unique 'artifactId' value.  This value determines the project's root folder name.
+        
+4. 
     
 Feedback
 --------
