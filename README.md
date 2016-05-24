@@ -28,8 +28,8 @@ Contents
     
     * Automation to add component [niem-conformance-validator] ( https://github.com/gmoyanollc/niem-conformance-validator )
 
-How to use
-----------
+How to get started
+------------------
 1. [git-clone] (https://git-scm.com) this repository to a folder for projects:
 
         cd dev-project
