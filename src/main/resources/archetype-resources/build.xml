@@ -9,15 +9,15 @@
         
         ----------------------------
         -- author:  George Moyano --
-        -- version: 1.1           --
+        -- version: 1.1.2           --
         -- updated: May 2016      --
         ----------------------------
     </description>
     
     <property name="niem-conformance-validator-repo-url" 
-        value="https://github.com/gmoyanollc/validate-niem-conformance"/>
+        value="https://github.com/gmoyanollc/niem-conformance-validator"/>
     <property name="niem-conformance-validator-destination-folder" 
-        value="${basedir}/src/test/resources/validate/validate-niem-conformance"/>
+        value="${basedir}/src/test/resources/validate/niem-conformance-validator"/>
   
     <macrodef name="git">
         <attribute name="git-command"/>
