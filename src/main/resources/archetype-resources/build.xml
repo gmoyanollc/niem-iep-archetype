@@ -7,11 +7,11 @@
     <description>
         Add components from other sources using Ant. 
         
-        --------------------------
+        ----------------------------
         -- author:  George Moyano --
-        -- version: 1.0           --
+        -- version: 1.1           --
         -- updated: May 2016      --
-        --------------------------
+        ----------------------------
     </description>
     
     <property name="niem-conformance-validator-repo-url" 
@@ -31,14 +31,54 @@
             </exec>
         </sequential>
     </macrodef>
-    
-    <target name="get-niem-conformance-validator">
+
+    <target name="do-git-clone">
+        <echo message="cloning to [ ${niem-conformance-validator-destination-folder} ] ..."/>
         <git git-command="clone">
             <args>
                 <arg value="${niem-conformance-validator-repo-url}"/>
                 <arg value="${niem-conformance-validator-destination-folder}"/>
             </args>
         </git>
+    </target>
+    
+    <target name="do-git-reset-pull">
+        <echo message="resetting and pulling to [ ${niem-conformance-validator-destination-folder} ] ..."/>
+        <echo message="NOTE: git option '-C' requires version 1.8.5 or greater"/>
+        <git git-command="-C">
+            <args>
+                <arg line="${niem-conformance-validator-destination-folder} reset --hard HEAD"/>
+            </args>
+        </git> 
+        <git git-command="-C">
+            <args>
+                <arg line="${niem-conformance-validator-destination-folder} 
+                    pull ${niem-conformance-validator-repo-url}"/>
+            </args>
+        </git>
+    </target>
+
+    <target name="prompt-user-to-pull">
+        <local name="_user-response"/>
+        <local name="_user-response-y"/>
+        <echo message="A cloned instance already exists.  Any changes to tracked files will be discarded."/>
+        <echo message="You may want to backup/rename tracked files, such as build.xml, that were customized."/>
+        <echo/>
+        <input message="Go ahead and update with a git reset and pull? " 
+            defaultvalue="y" addproperty="_user-response" validargs="y,n"/>
+        <condition property="_user-response-y">
+            <equals arg1="${_user-response}" arg2="y"/>
+        </condition>
+        <antcall target="do-git-reset-pull" if:true="${_user-response-y}"/>
+    </target>
+    
+    <target name="get-niem-conformance-validator">
+        <local name="_does-folder-already-exist"/>
+        <available file="${niem-conformance-validator-destination-folder}/.git/config"
+            property="_does-folder-already-exist"/>
+        <echo message="$${_does-folder-already-exist} : [ ${_does-folder-already-exist} ]"/>
+        <antcall target="do-git-clone" unless:true="${_does-folder-already-exist}"/>
+        <antcall target="prompt-user-to-pull" if:true="${_does-folder-already-exist}"/>
     </target>
     
 </project>
