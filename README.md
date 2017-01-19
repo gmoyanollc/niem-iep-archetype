@@ -25,9 +25,11 @@ The workflow is depicted below:
 ```
 ##What's Included
 
-    * A folder tree that loosely resembles the guidance provided by NIEM [Model Package Description (MPD)](https://reference.niem.gov/niem/specification/model-package-description/3.0/model-package-description-3.0.html#appendix_E). 
-    
-    * Automation to add component [niem-conformance-validator]( https://github.com/gmoyanollc/niem-conformance-validator)
+* A folder tree that loosely resembles the guidance provided by NIEM 
+  [Model Package Description (MPD)](https://reference.niem.gov/niem/specification/model-package-description/3.0/model-package-description-3.0.html#appendix_E). 
+
+* Automation to add component 
+  [niem-conformance-validator](https://github.com/gmoyanollc/niem-conformance-validator)
 
 ##Install to a Maven Repository
 The following steps install the archetype to a local Maven repostiory:
@@ -37,7 +39,7 @@ The following steps install the archetype to a local Maven repostiory:
       cd dev-project
       git clone  https://github.com/gmoyanollc/niem-iep-archetype
 ```    
-    Expected result:
+Expected result:
 ```    
       dev-project
       `-- niem-iep-archetype
@@ -69,7 +71,7 @@ The following steps install the archetype to a local Maven repostiory:
       cd niem-iep-archetype
       mvn clean install
 ``` 
-    Expected result:
+Expected result:
 ```   
       ...
       [INFO] ------------------------------------------------------------------------
@@ -93,7 +95,7 @@ The following steps can be used again and again to generate a project folder wit
          
          Optionally accept property default values by pressing "Enter".
 ```
-    Expected result:
+Expected result:
 ```  
       ...
       [INFO] ------------------------------------------------------------------------
@@ -125,7 +127,7 @@ The following steps can be used again and again to generate a project folder wit
       cd niem-iep
       ant
 ```
-    Expected result:
+Expected result:
 ```    
       ...
       BUILD SUCCESSFUL
