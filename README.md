@@ -39,7 +39,7 @@ The following steps install the archetype to a local Maven repostiory:
       cd dev-project
       git clone  https://github.com/gmoyanollc/niem-iep-archetype
   ```    
-  Expected result:
+  * Expected result:
   ```    
       dev-project
       `-- niem-iep-archetype
@@ -71,7 +71,7 @@ The following steps install the archetype to a local Maven repostiory:
       cd niem-iep-archetype
       mvn clean install
   ``` 
-  Expected result:
+  * Expected result:
   ```   
       ...
       [INFO] ------------------------------------------------------------------------
@@ -95,7 +95,7 @@ The following steps can be used again and again to generate a project folder wit
          
          Optionally accept property default values by pressing "Enter".
   ```
-  Expected result:
+  * Expected result:
   ```  
       ...
       [INFO] ------------------------------------------------------------------------
@@ -127,7 +127,7 @@ The following steps can be used again and again to generate a project folder wit
       cd niem-iep
       ant
   ```
-  Expected result:
+  * Expected result:
   ```    
       ...
       BUILD SUCCESSFUL
