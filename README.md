@@ -36,8 +36,8 @@ The following steps install the archetype to a local Maven repostiory:
 
 1. Copy files or [git-clone](https://git-scm.com) this repository to a folder for projects:
   ```
-      cd dev-project
-      git clone  https://github.com/gmoyanollc/niem-iep-archetype
+  cd dev-project
+  git clone  https://github.com/gmoyanollc/niem-iep-archetype
   ```
   * Expected result:
   ```
@@ -68,8 +68,8 @@ The following steps install the archetype to a local Maven repostiory:
   ```
 2. [Maven-install](https://maven.apache.org/download.cgi) this archetype to a Maven repository:
   ```
-      cd niem-iep-archetype
-      mvn clean install
+  cd niem-iep-archetype
+  mvn clean install
   ```
   * Expected result:
   ```
@@ -86,14 +86,14 @@ The following steps can be used again and again to generate a project folder wit
 
 1. Generate a new project based on this archetype:
   ```
-      cd dev-project
-      mvn archetype:generate -DarchetypeCatalog=local
+  cd dev-project
+  mvn archetype:generate -DarchetypeCatalog=local
 
-         Choose archetype:  "com.onename.gmoyano:niem-iep-archetype (niem-iep-archetype)"
-         
-         Enter a unique 'artifactId' property value.  This value determines the project's root folder name.
-         
-         Optionally accept property default values by pressing "Enter".
+     Choose archetype:  "com.onename.gmoyano:niem-iep-archetype (niem-iep-archetype)"
+     
+     Enter a unique 'artifactId' property value.  This value determines the project's root folder name.
+     
+     Optionally accept property default values by pressing "Enter".
   ```
   * Expected result:
   ```
@@ -124,8 +124,8 @@ The following steps can be used again and again to generate a project folder wit
   ```
 2. Add external components using Ant, such as [niem-conformance-validator]( https://github.com/gmoyanollc/niem-conformance-validator)
   ```
-      cd niem-iep
-      ant
+  cd niem-iep
+  ant
   ```
   * Expected result:
   ```
