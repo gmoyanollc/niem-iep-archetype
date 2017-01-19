@@ -35,10 +35,10 @@ The workflow is depicted below:
 The following steps install the archetype to a local Maven repostiory:
 
 1. Copy files or [git-clone](https://git-scm.com) this repository to a folder for projects:
-    ```
+
     cd dev-project
     git clone  https://github.com/gmoyanollc/niem-iep-archetype
-    ```
+
   * Expected result:
     ```
     dev-project
@@ -67,10 +67,10 @@ The following steps install the archetype to a local Maven repostiory:
                         `-- maven
     ```
 2. [Maven-install](https://maven.apache.org/download.cgi) this archetype to a Maven repository:
-    ```
+
     cd niem-iep-archetype
     mvn clean install
-    ```
+
   * Expected result:
     ```
     ...
@@ -123,10 +123,10 @@ The following steps can be used again and again to generate a project folder wit
                 `-- java
     ```
 2. Add external components using Ant, such as [niem-conformance-validator]( https://github.com/gmoyanollc/niem-conformance-validator)
-    ```
+
     cd niem-iep
     ant
-    ```
+
   * Expected result:
     ```
     ...
