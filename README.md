@@ -38,9 +38,9 @@ The following steps install the archetype to a local Maven repostiory:
   ```
       cd dev-project
       git clone  https://github.com/gmoyanollc/niem-iep-archetype
-  ```    
+  ```
   * Expected result:
-  ```    
+  ```
       dev-project
       `-- niem-iep-archetype
           `-- src
@@ -70,9 +70,9 @@ The following steps install the archetype to a local Maven repostiory:
   ```
       cd niem-iep-archetype
       mvn clean install
-  ``` 
+  ```
   * Expected result:
-  ```   
+  ```
       ...
       [INFO] ------------------------------------------------------------------------
       [INFO] BUILD SUCCESS
@@ -96,7 +96,7 @@ The following steps can be used again and again to generate a project folder wit
          Optionally accept property default values by pressing "Enter".
   ```
   * Expected result:
-  ```  
+  ```
       ...
       [INFO] ------------------------------------------------------------------------
       [INFO] BUILD SUCCESS
@@ -128,7 +128,7 @@ The following steps can be used again and again to generate a project folder wit
       ant
   ```
   * Expected result:
-  ```    
+  ```
       ...
       BUILD SUCCESSFUL
       ...
@@ -142,7 +142,7 @@ The following steps can be used again and again to generate a project folder wit
                       |-- iso-schematron-xslt2
                       |-- niem-ndr
                       `-- saxon
-  ```    
+  ```
 #Feedback
 If you feel like the archetype is missing a feature or has a defect, contact me or create an [issue](https://github.com/gmoyanollc/niem-iep-archetype/issues). When creating a new issue, please provide a comprehensive description of your concern. Especially for fixing bugs it is crucial that I can reproduce your problem. For this reason, entire debug logs, source or most preferably little demo projects attached to the issue are very much appreciated. Of course, patches are welcome, too.
 
